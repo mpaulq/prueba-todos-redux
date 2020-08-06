@@ -27,6 +27,8 @@ function ToDoForm() {
         const status = moment(currentDate).isAfter(limitDate)? 2: 1;
         dispatch(createTodo({description, limitDate, status}));
         event.preventDefault()
+        setDescription("")
+        setLimitDate(formatDate)
     }
 
     

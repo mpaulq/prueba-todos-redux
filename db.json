@@ -1,35 +1,35 @@
 {
   "todos": [
     {
-      "description": "Nueva tarea",
-      "limitDate": "2020-08-21T00:00:00.000Z",
-      "status": 0,
-      "created_at": "2020-08-05T23:22:07.400Z",
-      "updated_at": "2020-08-05T23:25:27.300Z",
+      "description": "Pagar las cuentas de la casa",
+      "limitDate": "2020-08-05T00:00:00.000Z",
+      "status": 2,
+      "created_at": "2020-08-06T02:32:11.800Z",
+      "updated_at": "2020-08-06T02:34:58.800Z",
       "id": 1
     },
     {
-      "description": "Otra tarea",
-      "limitDate": "2020-08-04T00:00:00.000Z",
+      "description": "Comprar comida para el perro",
+      "limitDate": "2020-08-14T00:00:00.000Z",
       "status": 1,
-      "created_at": "2020-08-05T23:22:29.500Z",
-      "updated_at": "2020-08-05T23:25:39.200Z",
+      "created_at": "2020-08-06T02:33:10.200Z",
+      "updated_at": "2020-08-06T02:34:42.800Z",
       "id": 2
     },
     {
-      "description": "Tarea atrasada",
-      "limitDate": "2020-08-03T00:00:00.000Z",
-      "status": 2,
-      "created_at": "2020-08-05T23:22:45.800Z",
-      "updated_at": "2020-08-05T23:22:45.800Z",
+      "description": "Llamar a papá",
+      "limitDate": "2020-08-14T00:00:00.000Z",
+      "status": 0,
+      "created_at": "2020-08-06T02:33:44.700Z",
+      "updated_at": "2020-08-06T02:34:29.600Z",
       "id": 3
     },
     {
-      "description": "Tarea atrasada 2",
-      "limitDate": "2020-08-02T00:00:00.000Z",
-      "status": 0,
-      "created_at": "2020-08-05T23:23:00.800Z",
-      "updated_at": "2020-08-05T23:23:14.900Z",
+      "description": "Juntarse en el bar con los amigos de la universidad",
+      "limitDate": "2020-08-10T00:00:00.000Z",
+      "status": 1,
+      "created_at": "2020-08-06T02:35:33.500Z",
+      "updated_at": "2020-08-06T02:35:33.500Z",
       "id": 4
     }
   ]

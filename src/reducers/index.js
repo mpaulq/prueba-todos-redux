@@ -1,4 +1,5 @@
 import { SEND_QUERY, GET_TODOS, ADD_TODO, EDIT_TODO, SORT_TODOS, CHECK_TODO } from '../actions';
+import moment from 'moment';
 
 let defaultState = {
     loading: false,
@@ -19,7 +20,13 @@ const todoReducer = (state = defaultState, action) => {
             return {
                 ...state,
                 loading: false,
-                todos: action.payload
+                todos: action.payload.map(todo => {
+                    const status = moment(state.currentDate).isAfter(todo.limitDate) && todo.status === 1? 2: todo.status
+                    return {
+                        ...todo,
+                        status
+                    }
+                })
             }
         case ADD_TODO:
             return {

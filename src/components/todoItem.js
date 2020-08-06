@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { updateTodo, checkTodo } from '../actions';
 import {
     ListItem,
@@ -11,6 +11,7 @@ import {
 import moment from 'moment';
 
 function ToDoItem({todo, showIcon}) {
+    const { currentDate } = useSelector(state => state)
     const dispatch = useDispatch();
     
     const todoColor = (status) => {
@@ -38,11 +39,9 @@ function ToDoItem({todo, showIcon}) {
                     type="date"
                     defaultValue={limitDateFormatted}
                     onChange={(event) => dispatch(updateTodo({
-                        id: todo.id,
-                        description: todo.description,
+                        ...todo,
                         limitDate: event.target.value,
-                        status: todo.status,
-                        created_at: todo.created_at
+                        status: moment(currentDate).isAfter(event.target.value)? 2: todo.status
                     }))} />
             } />
             <ListItemSecondaryAction>
